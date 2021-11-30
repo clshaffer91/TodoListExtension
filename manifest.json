@@ -1,0 +1,30 @@
+{
+  "name": "To-do List Tab Group Builder",
+  "description": "Transform your To-do list into tab groups with this productivity tool",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {},
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["popup.html"],
+      "matches": ["https://*/*", "http://*/*"],
+      "extension_ids": ["bgpfjoocalpgfomdgdoookfikkpagbjm"]
+    }
+  ],
+  "icons": {
+    "16": "images/temp.png",
+    "32": "images/temp.png",
+    "48": "images/temp.png",
+    "128": "images/temp.png"
+  }
+}
