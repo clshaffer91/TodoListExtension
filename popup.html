@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
-    Content
+    <div class="container">
+      <div id="toolbar">
+        <p id="title">TODO LIST</p>
+      </div>
+      <div id="all-todo-items">
+        <ul id="todo-items"></ul>
+      </div>
+      <div id="take-todo">
+        <textarea id="new-todo" placeholder="Write Moar Code..."></textarea>
+        <input
+          type="image"
+          src="images/temp.png"
+          id="addListItem"
+          height="32"
+          width="32"
+        />
+        <script src="popup.js"></script>
+      </div>
+    </div>
   </body>
 </html>
